@@ -1,0 +1,4 @@
+Write bash command(s) to show count of all Google Chrome processes.
+
+1. Open terminal
+2. Enter ps axu | grep "Google Chrome" | wc -l command
