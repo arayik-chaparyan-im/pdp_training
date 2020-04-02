@@ -1,0 +1,8 @@
+Write bash command(s) to read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file.
+
+
+1. Open terminal
+2. Go to the corresponding place -> cd Desktop/pdp_training command
+3. Enter while read line; do echo $line; done < test.txt command
+4. Enter sed 's/testing/DONE/g; /test/DONE/g; s/Test/DONE/g' test.txt > test.result.txt command
+
