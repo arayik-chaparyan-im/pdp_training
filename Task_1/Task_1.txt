@@ -1,0 +1,6 @@
+Need to do the following steps for resolving Task1
+1. Inport Task_1.postman_collection.json to your postman
+2. Click Run button on the collection
+3. Choose the search.csv file
+4. Click Run Task_1 button
+
