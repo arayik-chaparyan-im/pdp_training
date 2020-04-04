@@ -1,0 +1,10 @@
+Request - https://www.imdb.com/find?s=kw&q={{keyword}}&ref_=nv_sr_sm
+200 status code - pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+Run the collection using uploaded .csv file which includes the following:
+keyword
+Drama
+Comedy 
+Horror
+Fight
