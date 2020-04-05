@@ -1,0 +1,13 @@
+1. Create .CSV file contains the following keywords: Drama, Comedy , Horror , Fight
+
+2. Create a collection with Get method: 
+
+https://www.imdb.com/find?s=kw&q={{keyword}}&ref_=nv_sr_sm
+
+3. Run the collection using .CSV file (upload the file before start to run)
+
+4. Check the result status using the following test script: 
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+}); 
