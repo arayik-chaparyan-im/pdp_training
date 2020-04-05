@@ -1,0 +1,3 @@
+I have usered the following command for replacing the "test" woord from the test.txt file , replacing it to the "Done" and writeing in "test.result.txt" file:
+ (gc test.txt) -replace 'test', 'DONE' | Out-File -encoding ASCII test.result.txt
+I have used the Windows OS.
