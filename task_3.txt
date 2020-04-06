@@ -1,0 +1,1 @@
+sed 's/test/DONE/g' test.txt >> test.result.txt

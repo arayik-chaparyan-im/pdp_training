@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "013f08bc-4f00-42f1-8240-b9d0af3e2d4a",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "task_1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "634d2a6c-6bca-4769-b856-b21ccbfadb34",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "afddc211-d8be-458f-8b2a-d650f6b50a4e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.imdb.com",
+						"disabled": true
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1",
+						"disabled": true
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document",
+						"disabled": true
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1",
+						"disabled": true
+					},
+					{
+						"key": "referer",
+						"value": "https://www.imdb.com/find?s=kw&q=comedy&ref_=nv_sr_sm",
+						"disabled": true
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"disabled": true
+					},
+					{
+						"key": "cookie",
+						"value": "uu=BCYpqQRaPG7WNhgm3bDjSAa4PpThNOwpEfCgmJkTmaU_E-AZTpF__abQ6hRi5aQQgMi419Gvytzy%0D%0Aijwgeu-SMfC0XTxro6pTbUkD1VYTyGlPM4-T0DpCm6eTAchOLHt-Oy80F0OJuWbWli6SkBuklDoR%0D%0AwQ%0D%0A; session-id=141-4303260-8960805; adblk=adblk_no; ubid-main=135-8002623-1119151; session-id-time=2082787201l; session-token=NmFyTkUJHECjYHu63fjf9mOvbC5NXEnyTmcvDi8BIf2fgMFWjELZQQdWrnOXdgK+ey3iHtT3t5RCdne0HPJSLubzKCxG0A1Fbj0C4nYeKbxGM0QDYXkcg5Cqq7fa4kXgk7P/AqeRfsEWeZsa545mliTRu+Mc6xysD25YCmKtB2aKogCX3D8qMlxwRsksooy7; csm-hit=tb:9WW4J8TH19C397PCXCHK+s-S29YK89M6YP8ZKWCQ8W9|1585858385568&t:1585858385569&adb:adblk_no",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://www.imdb.com/find?s=kw&q={{variable_key}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "kw"
+						},
+						{
+							"key": "q",
+							"value": "{{variable_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
