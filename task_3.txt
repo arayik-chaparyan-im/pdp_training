@@ -1,2 +1,1 @@
-while read line; do echo $line; done < test.txt 
 sed ' s/testing/DONE/g; s/test/DONE/g; s/Test/DONE/g' test.txt > test.result.txt 
