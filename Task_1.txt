@@ -1,1 +1,20 @@
-Need to add solutions
+Completed Task_1
+Created collection to search list of keywords from file in imdb.com website and check result status code to be equal to 200.
+List of keywords: drama, comedy, horror, fight
+
+
+Generated code for cURL:
+curl --location --request GET 'https://www.imdb.com/find?s=kw&q=drama&ref_=nv_sr_sm' \
+--header 'authority: www.imdb.com' \
+--header 'pragma: no-cache' \
+--header 'cache-control: no-cache' \
+--header 'upgrade-insecure-requests: 1' \
+--header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36' \
+--header 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+--header 'sec-fetch-site: same-origin' \
+--header 'sec-fetch-mode: navigate' \
+--header 'sec-fetch-user: ?1' \
+--header 'sec-fetch-dest: document' \
+--header 'referer: https://www.imdb.com/find?s=kw&q=horror&ref_=nv_sr_sm' \
+--header 'accept-language: en-US,en;q=0.9' \
+--header 'cookie: uu=BCYiMOo3hdEf2eP5X6EyJcVqyVNTdNIQaHc09v6uLtUJx0kYq7jWqUK4vkWBhn5RIWhWXIgVMWg-%0D%0ATABuWoZztGK1S2EpoYsfthmSaMehalN92rygu9ejjwqigtMizy1zZGA_X2dYBlpdjsZ2_z08QMWg%0D%0AOg%0D%0A; session-id=144-6311858-3694031; session-id-time=2217694011; adblk=adblk_no; ubid-main=130-9793592-1279000; session-token=8qM0yFr9rA/iBc/WHnFX92+v4tsq4wSli/5AT4A5jqW0xxA6p+981/Qg1EEKVJpzwigUMUIoX3lFjZM8O9iu5XuvFUSfCF0ebPQXBZ5/7Yjdx65EPQujI1zA4eJhdiZWABt7YJ4hpiaJVnXy7GwTiR9kKMQ9lxGtATuMlmqbs17e+NUn9uTZONKKObnmHFS+; csm-hit=tb:T9J6AG5ZF96AKTCX006F+s-0R03SH1HKEGMZQC8R7KT|1586974366163&t:1586974366163&adb:adblk_no'
