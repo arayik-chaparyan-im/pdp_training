@@ -1,0 +1,54 @@
+{
+	"id": "ccdea698-3d3d-4e34-83e5-7de6b58f7e9e",
+	"name": "Search keyword",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"5faf6492-3680-4106-961b-97f68e1a9aa4"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "5faf6492-3680-4106-961b-97f68e1a9aa4",
+			"name": "https://www.imdb.com/find?q={{keyword}}",
+			"url": "https://www.imdb.com/find?q={{keyword}}",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "{{keyword}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "DONE",
+					"script": {
+						"id": "d8d2e581-8e7d-47ca-837b-249acd7b237b",
+						"exec": [
+							"pm.DONE(\"status code is 200 ok\", function () {",
+							"    pm.response.to.have.status(200);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}
