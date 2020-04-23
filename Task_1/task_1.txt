@@ -1,0 +1,8 @@
+Please see my created Postman Collection (Search_imdb.postman_collection):
+You can do the following steps to see the result:
+# Import the Postman collection
+# Select the Arrow button and tap on the "Run" button
+# Clock on the "Select File" from the "Data" option
+# Select "Keywords.scv" file and "Run Search_imbd"
+# Observe that all 4 requests are passed with Status Code 200
+(Please see the Postman Collection and .scv file attached)

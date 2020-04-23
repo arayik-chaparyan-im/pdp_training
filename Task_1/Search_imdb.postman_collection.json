@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "3607bd69-f55a-4511-bcb2-3a561a53417b",
+		"name": "Search_imdb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search_drama",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7c285b6d-dc43-41dc-b739-eb6b0deb1b9a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.imdb.com"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.imdb.com/find?s=kw&q=drama&ref_=nv_sr_sm"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "ubid-main=131-8025639-0573345; session-id=147-9446301-0208061; session-id-time=2082787201l; uu=BCYohcHFyxaPlm5SGL7oZ1gGbS8qSBOjy8brvf3Ohm5ALmRJg__RWZdASp7x-1x0HbEx3UoVb1TA%0D%0Aev219AgXvT6WqUqrc85ALgbqxq-TFhxWk9KsOtBjTqH9uPX35F_LaE0iX5T4gAtwP312MI1acqeg%0D%0AHQ%0D%0A; adblk=adblk_no; session-token=i//twjGNDT9Vd6A72uU2tAMZI8mCLPptw5W6oo7855xEw87nT9UsPga/RopsSNWKCuCNXZKJtnR4aHKYP8BpS9TzCAo/7klEdKlH2gL29HYY+F6nhuVgMiEz+k4WA8euqzyGcrGwJk3Y0iw9dLaVTb46OodZQRx+ivRAsWTaiskmZt7VQRddNJXY90vUENfQ; csm-hit=tb:ZTGDRXKW20K485318WHB+s-0CBBM28WS449AWAYX8TQ|1585673981832&t:1585673981834&adb:adblk_no"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.imdb.com/find?s=kw&q={{keywords}}&ref_=nv_sr_sm",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "kw"
+						},
+						{
+							"key": "q",
+							"value": "{{keywords}}"
+						},
+						{
+							"key": "ref_",
+							"value": "nv_sr_sm"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

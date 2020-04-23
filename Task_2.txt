@@ -1,0 +1,5 @@
+1. Count of all Google Chrome processes.
+(Get-Process | Where-Object {$_.Name -eq 'Chrome'}).count 
+
+2․ Print all Google Chrome processes in a file (processes.txt)
+ tasklist | findstr "chrome.exe" >~/Desktop/processes.txt   (Please see the file attached)
