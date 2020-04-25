@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "0dff5edb-d4bd-4766-ad09-dc419f29d5b5",
+		"name": "PDP Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.google.com/search?q={{keyWords}}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "40c7b463-1e69-46fc-b884-f4c9bc696d2d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.google.com/"
+					},
+					{
+						"key": "authority",
+						"value": "www.google.com"
+					},
+					{
+						"key": "cookie",
+						"value": "CGIC=InZ0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS93ZWJwLGltYWdlL2FwbmcsKi8qO3E9MC44LGFwcGxpY2F0aW9uL3NpZ25lZC1leGNoYW5nZTt2PWIz; CONSENT=YES+US.en+; SEARCH_SAMESITE=CgQI744B; OGPC=19016257-4:; ANID=AHWqTUl5Jxc4fysh9glexkrzMLfwhDOJjRzPTuAoICzTatAOQ3dipyvE0yTAESkE; NID=203=gUHz3SnQ6V2jGR7nkvpJ_Ur4M5N0Niv2TD-n9FO9o7_mRb9RQaDeISSeqQYkyXyXhElsYdkvlBOK97gkmkyPUNLUmaOcx2eGSFYLz6HZ8w0DX7--kCYiKDzzO3u5GEjSMOQh7PGYAqtHd6ZAedRJaIOqc00KgXs0NXRs7J083Ej-UZVHzJfBvJuNfZhxT2iDlEO80g_qLu8ddg; DV=k28ZUZD_lD0sEI-_c6XaMskcV60SG5c7-pRbxlypgQEAAAA; 1P_JAR=2020-4-25-11"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "x-client-data",
+						"value": "CKa1yQEIlbbJAQimtskBCKmdygEI4qjKAQivrMoBCMqvygEIzrDKAQj3tMoBCI66ygE="
+					}
+				],
+				"url": {
+					"raw": "https://www.google.com/search?q={{keyWords}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{keyWords}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
