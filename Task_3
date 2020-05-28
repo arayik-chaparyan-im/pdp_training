@@ -1,1 +1,12 @@
-Need to do the task 3.
+Completed the task_3 via Windows Power Shell.
+
+Create test.txt file using  "echo text content > test.txt" command
+Used the following commands:
+Get-Content -path test.txt command for checking the content or the replacement of the words within the file
+Get-Content -path test.txt -Raw
+(Get-Content -path test.txt -Raw) -replace 'test','DONE
+(Get-Content -path test.txt -Raw) -replace 'test','DONE' | Set-Content -Path test.txt' for replacing the keyword
+
+Used "Move-Item -Path test.txt -Destination test.replace.txt" command to move a file to another one and renamed it:
+ move test.txt file to another remnamed one - test.replace.txt
+
