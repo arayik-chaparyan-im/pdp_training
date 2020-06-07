@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "eade81fc-838f-429f-ab77-fe86365fe68d",
+		"name": "PDP_keywords_search",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Collection to search list of keywords",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e7d06efa-4250-48f4-92ee-de1f6599738e",
+						"exec": [
+							"pm.test(\"Status code is 200.\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.bing.com"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.bing.com/"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "MUID=01C0F76079CE61CD245BFABA7DCE62F6; MUIDB=01C0F76079CE61CD245BFABA7DCE62F6; SRCHD=AF=NOFORM; SRCHUID=V=2&GUID=71F2DFA9CF8A4D008A778140D3F1F846&dmnchg=1; ipv6=hit=1591205350037&t=4; _EDGE_S=mkt=hy-am&SID=22101053F3F06D0010B01E8DF27B6C30; SRCHUSR=DOB=20200603&T=1591201823000; _HPVN=CS=eyJQbiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiUCJ9LCJTYyI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiSCJ9LCJReiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiVCJ9LCJBcCI6dHJ1ZSwiTXV0ZSI6dHJ1ZSwiTGFkIjoiMjAyMC0wNi0wM1QwMDowMDowMFoiLCJJb3RkIjowLCJEZnQiOm51bGwsIk12cyI6MCwiRmx0IjowLCJJbXAiOjJ9; SRCHHPGUSR=HV=1591203448&WTS=63726798546&CW=1853&CH=981&DPR=1&UTC=240; _SS=SID=22101053F3F06D0010B01E8DF27B6C30"
+					}
+				],
+				"url": {
+					"raw": "https://www.bing.com/search?q={{keyword}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"bing",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{keyword}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
