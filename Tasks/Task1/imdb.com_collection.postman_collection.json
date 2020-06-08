@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "136b4fc0-64bd-4cea-8954-2bb262f6e38b",
+		"name": "imdb.com_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search_key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "54a7a8d3-8c19-426c-a62c-75943e41553a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ab183fd6-7ef7-4c77-bb75-de8e8e2c4ba3",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.imdb.com"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.imdb.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7,ru;q=0.6"
+					},
+					{
+						"key": "cookie",
+						"value": "ubid-main=134-4236235-3565024; session-id=143-8062671-9140333; session-id-time=2082787201l; uu=BCYg383F9RWjgerYCP_o8HV89E1BXhGCVreGLLXkXhWSTYu-k-YYmwhqKVhWqNFjhoPy3g7ABNRD%0D%0ARJuWHfwabgyMEpNWzobav1WfgFi6YivdzM_utE19P2Dfo94TJoxxXcfWhJBgDKPvvVmrjRf027kj%0D%0AqQ%0D%0A; adblk=adblk_no; csm-hit=tb:3YF9VEANAGXEPB2W2W6A+s-3YF9VEANAGXEPB2W2W6A|1590952986357&t:1590952986357&adb:adblk_no; session-token=+aVs+eRXWV6C+iCdi8k6zo3yE4zRMIyDcwzieoYZiLOs6IO6IuaGESWfWAS4BZGVI4cBluV45+6zx9G5xa2016AQDRDLTsF4JSFrutMBg/RZPzl/W+gaxxeqfMJPylTziXv7CyIYdGjqbFy1uhrurqqCimQaZblm1b5Sk6OsSS87xtnsxNMogEmNW2g5tCTq"
+					},
+					{
+						"key": "bypasstbbsplash",
+						"value": "True",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://www.imdb.com/find?s=kw&q={{search_key}}&ref_=nv_sr_sm",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "kw"
+						},
+						{
+							"key": "q",
+							"value": "{{search_key}}"
+						},
+						{
+							"key": "ref_",
+							"value": "nv_sr_sm"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "07e43bbc-2c6b-48ba-b6f5-c4621a664480",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d1816c6b-3548-41aa-ba88-b63aa3f5aa94",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
