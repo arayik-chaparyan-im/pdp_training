@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "e6559ae9-5109-4943-8007-4fe4d94e6806",
+		"name": "Vard collaction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search keyword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b7d0b5fa-41dc-4835-b1f2-d2267768d359",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.imdb.com"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.imdb.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "ubid-main=135-6492472-5133737; session-id=144-6151784-9528759; session-id-time=2082787201l; session-token=2teve/2j1tsibzOGXEuwqKRCPsmUvu4YdYUUnYUrTbbBIFKpbRGqI517hQ/bqDJpkfqIzUilmIoD18BRv93DJ0zKPeQJotgIiNJO7GsrgfKtK7JFg/K1+lrqLCUx3sd2oJE0sedDrAtcEC98jf+Xog1RkyTyLq4l/T8OCzxm66DjkJld/wrL+WqYNudnIaYY; uu=BCYtCKm5E2yfPV90YtCFTuk6YX02g8KBhW8Onw9NAXDtM66hmiyh72BiTa-5UnNwX-ljvSg1ziad%0D%0AS2ET0cpR1Q9yi2j6wr92kR9KtH6M2jSb_4ntyjWMVBf8qE1NkT1uNj7IkjDqf__tD4I3kahhL_dQ%0D%0AmQ%0D%0A; adblk=adblk_yes; csm-hit=tb:RSSRS5QXN29CE0V8WT1D+s-0JX0TNGWSTHN02E0FST0|1591466594781&t:1591466594781&adb:adblk_yes"
+					}
+				],
+				"url": {
+					"raw": "https://www.imdb.com/find?s=kw&q={{keyword}}&ref_=nv_sr_sm",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "kw"
+						},
+						{
+							"key": "q",
+							"value": "{{keyword}}"
+						},
+						{
+							"key": "ref_",
+							"value": "nv_sr_sm"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
