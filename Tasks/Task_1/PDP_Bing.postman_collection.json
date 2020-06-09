@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "9cf515c9-0574-4591-ac5d-f12479978f7a",
+		"name": "PDP_Bing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "countrynames",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "82646ace-ce46-4980-ae2a-607cbdf4579a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.bing.com"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.bing.com/?toWww=1&redig=B264045D0B14402C82ADDA58A2FBDEFC"
+					},
+					{
+						"key": "accept-language",
+						"value": "en,ru;q=0.9,en-US;q=0.8,es-ES;q=0.7,es;q=0.6,fr-FR;q=0.5,fr;q=0.4"
+					},
+					{
+						"key": "cookie",
+						"value": "SRCHD=AF=B00032; SRCHUID=V=2&GUID=562EBB8300164DA185D38A64BC493C07&dmnchg=1; _RwBf=s=70&o=18; MUID=38861BC5860A69241CA1150687816840; _SS=SID=0DC2AE2634A8626B1A5FA0C535C36335; MUIDB=38861BC5860A69241CA1150687816840; ipv6=hit=1591634924483&t=4; _EDGE_S=mkt=hy-am&SID=0DC2AE2634A8626B1A5FA0C535C36335; SRCHUSR=DOB=20191003&T=1591631328000; BFBUSR=BAWAS=1; BFB=AhDKaW94MpLdiUGG_lNjyPoozdD2SwZdS4cGc9Jfjp63rc1-21yqGAHQ3tKsoDslZaBGHD2u4Ra3Y7sCb8UEI3AjBa7Q6ztsHpG_lpnAWP0x8qXBukZySvUu5md03Pr2vp5g8d4KWDIdeUgxwI4Aoo-a9mOMowvA_sHDJ2xFN1pZMQ; OID=AhBPMDwY4hoNOwE3D96JuLNYWSzW2eqQmuUlvap5OXrO2dDqy4bBVGoKKQXBPY5HYyd953W31d054C8f0ZaMVUhR; OIDI=AhAxcFtLDCLzG4rWSA54p1zkcfzkOP-c0jCL1k7UP1Hunw; _HPVN=CS=eyJQbiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiUCJ9LCJTYyI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiSCJ9LCJReiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiVCJ9LCJBcCI6dHJ1ZSwiTXV0ZSI6dHJ1ZSwiTGFkIjoiMjAyMC0wNi0wOFQwMDowMDowMFoiLCJJb3RkIjowLCJEZnQiOm51bGwsIk12cyI6MCwiRmx0IjowLCJJbXAiOjN9; SRCHHPGUSR=CW=1920&CH=888&DPR=1&UTC=240&WTS=63727228123&HV=1591634268"
+					}
+				],
+				"url": {
+					"raw": "https://www.bing.com/search?q={{countrynames}}&form=QBLH&sp=-1&pq=yerevan&sc=6-7&qs=n&sk=&cvid=553B5DAFB1FB499687D511285C5E0F95",
+					"protocol": "https",
+					"host": [
+						"www",
+						"bing",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{countrynames}}"
+						},
+						{
+							"key": "form",
+							"value": "QBLH"
+						},
+						{
+							"key": "sp",
+							"value": "-1"
+						},
+						{
+							"key": "pq",
+							"value": "yerevan"
+						},
+						{
+							"key": "sc",
+							"value": "6-7"
+						},
+						{
+							"key": "qs",
+							"value": "n"
+						},
+						{
+							"key": "sk",
+							"value": ""
+						},
+						{
+							"key": "cvid",
+							"value": "553B5DAFB1FB499687D511285C5E0F95"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
