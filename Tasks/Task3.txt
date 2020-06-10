@@ -1,0 +1,5 @@
+Linux basic commands:
+Write bash command(s) to read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file.
+ - "test.txt" file you can find from "GIT" topic.
+
+sed s/test/DONE/gI test.txt > test.result.txt
