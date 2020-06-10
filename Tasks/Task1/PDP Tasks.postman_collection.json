@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "6969b6a3-5481-4572-87f7-908d5ad60076",
+		"name": "PDP Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "keyword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "49e6e34d-fa34-4d34-8035-dcbe167063b5",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.bing.com"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.bing.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9,ru;q=0.8,fr;q=0.7,hy;q=0.6,en-GB;q=0.5,es;q=0.4"
+					},
+					{
+						"key": "cookie",
+						"value": "MUID=1A454C4407BE6A9F399C414503BE6951; SRCHD=AF=S00028; SRCHUID=V=2&GUID=4808CAE4447C4534A82545C4AE51DB90&dmnchg=1; MUIDB=1A454C4407BE6A9F399C414503BE6951; _EDGE_S=mkt=hy-am&SID=20E1733532A065E503A07DD1330C642C; BPF=X=1; _SS=SID=20E1733532A065E503A07DD1330C642C; SRCHUSR=DOB=20190223&T=1591710568000&POEX=O; BFBUSR=BAWAS=0; OID=AhAC91hruwhWcTAX1-DDXM-54pGaDxdG7SI2EE5opOQYPGKM89m_xSsptRUhJUY9krsRD_5usyTr9nc00-V46I5WdHoFi5t6yxy15gDuJIGHod-QWFc_TpC7RREAlE-CsloA4Av7Kmg8JwBRq3LrjTXr; OIDR=ghCr4mX6gODbMteBsF2fXXaMsgMMNskPeIM_2ElXRdB4KdRCpcVssAG6CDIuzAnDBg3DIGkH9XQK36aKRtY5SeGO9qiV-N4f6WHqTqS0KeuF4zHh_2jjfnygcreNa9L-cLQ2RH43HPbuuAZiGMFiRwkLQc1F3MfaXLTJQYdVdJ57JUy4UrSaQX0ov2rjmotMW9hTGiwkue8mZSCwsOn4qq9NmpQj9Ac7W8mIJFKhe9KIIgK3NbgN-dEd2hAmOTzNRaBJMJPEXHDicPIxVz-HFw8fKmIpLzYVbRt8kUetMhn3teDZSGgAR3-rzO-nlcXRY3XKrGx6Poqgfp1ezsc_MpfNlQRDw-8OXaB0gUuP7h2K7EbeN7lSj9-gQb2aEbP1Q1aiuddM0C1IoM7bz97FAL4kassmNwKEJy-3hcbjyVxf7i_paC7Euk_fMurPSyqUpx7ovFsO7A0x3ZEzUpv41Z6Ma8_dA2EeDQxfRLjzhes08oqON_1SVIxo92V5DXnYn9y8_Hy29fotyenExcYA_kloSep7kGamYISwVPzhVGuGlELRhmDQgOUIVlQZLsrE8ErjLoHBvw7Zq5dTRA-KSz136MGu3z1VioswKHYVZ2RgPwBGPQzOnyS5lMyzpvs7gG7iNtYbJdlGi2_Zqh5EmcgYMR5eo9DABoJkBuy3ogza47_JptNqkxhP3Ikje9FmgbKb1ZH02RtnPzXDeiPY6kiHYFuBvl84QQ6CrTjvXtCGUM9aSFvegscxbmlJbGBEFnASk9S8sVq9oGu9P19KxWnBjwN78EYigZWwoe54krYFq9ElLzGhqrO9UAw68J1rDf69sqKetrERjaJGKLe-1s7Tl6xISfzd8DnosP58OnDaIE5GrQ6Da_uW6Yo90R3S3lg_Blrdu8Wnx69geFXfcgin4cnVLjojP4p_XD0y1_3pjGO8vcr1_hMsiCummMB8Vl46m7a6ba3OFqTlBFyUCs_C06_2IMK_tKImedi3wa2ScHg64rSgqPLP1H9R3tUqT-9mbiiWuN24_UBZjoVRgxfhmLDzCC0i7x-Tnetf2-2BD8kcy3cQ98tTCTzj5qMtGPOhzf_r1jlS1722V-t9kBF3Wto-J4iWW5xk-U0H0RNpQN54vWhte2Ow328pa_bjbIM; BFB=AhDjn01b_NbMRIOdRUpnUXxNzYChDy11D2cALrGw_GvFR79k2D75C4uZzK_jE7lwHxz531prYkjDEJoCnneneYu3kNdsig5VxH01SBOSdDece5YNfYmjYNpIUHFjU753kyPGSx0kLqEutuPOhTgUSxtNJQve_xiQm__f47LmKIrG4w; uvts=978d6eca-fa37-40a3-55ea-6304ac189d26; MicrosoftApplicationsTelemetryDeviceId=3a31e0d9-bebd-4b23-a6c8-b1e67f9b1457; MicrosoftApplicationsTelemetryFirstLaunchTime=2020-06-09T16:57:34.907Z; OIDI=ghAjjPYj85x481De6M2sYRkEbJkHWIGXyxnJ0u3RpJmP50J7mnaJhkRdSa0OvWFSQgozAq1W5h6B3vUzUG994pFXExW8NCCJQOIaQvQASxOJl8d0Ym9qhBA0ufh-7vGlUa6RdwZO3hw3d0LQzSQnV3fl0AtTsvGS_RHTaf_X3S-GI85o3reKU7zDTbbN8hSFSPJSE9qdEDUWCol7Nd-EOds_Tu08Rc_ztSoE35NGhOd0o9OS_a2l-k19EApFnr90wuJVZPviI_Apj5PlxcziB9727D_CGbBx9vlDEEZ-PSV3J-qVDPDh5gfQo1BN8kTJbPFnhajk0IBIDGSfhJI-ItHstxIuIvSEvjRho3IkGCtP78-nK5PL--RtVudwVrQizRxdjj7-p4Rhna3RB6B3O4dzM1e18uJz4Hr0Vgstgb16uVL1rGrYE4j_hytUuYHZCl2aOYrmhoHeeIbh55WP8OgbkN91e3PyqFEPbykl8RjqvsGZh2LrNJec5or4sZy421DDH0bNhRqFY23N1L88kgxEwjHcJeHWFerzhdgseWsHZirZltjgChoZzdAUuUyHTP215kIituOBx9-LexItXfarulaN4LHpldpG3F2SDRlDVo_Gs4dMfYGp0SRZCtMtCRR6cMEPR54sFC3VltEMaTIVbQgJVI-DCYv1NBUs3A99810QjjP_Gk6ZwhPPlj_tU7hk1hTE2fPYo3ZqfHdTkO0QIOCMZwOr4YeT8lZxRRxPjvVTyf2hhbuKyyFQ8P5Xbm-4oXMWLiAM7tjjT_zWxLYVG_5yp0J0UoeKrnz093S7o_4qS00pYxxMnDYI3OsmbFM2YUZ_1keJYQNFRNqh6AvZDRSGoKgZVoVxBL433AnYSa0xI1rtxTDsZvhvej2SkiiWWmpt-RawNnxv1F-zeozIhq7Ec54AI2BBsQ79AjHxUlcq3Ctm_S26kKGYKsa5cXaUh0jXVlAN2_vUSPnCNrta8MUaVEo45PpTpfcHbX_CiBHaVKS76XrY2WfMqb4aTBjChHRsxad2hZacWjQIf9i-_dC2Vd_ldoGxR8m_n1dKOXsq0DVMA5_hrDNmEjVMVcVYWB9PfssdIOB1ml5kNVQ7IEqrWi81WZkpYEz-x6-BEnBvgW_LsZ54rE0l0-N6qqSzCRHP3EcB_b1OIYL3ol_jrfdPNj0yQt-BvqydeNezq-KbF8er77HJDxvjUUEIncczlFwznziSQXaNh5RYpowc4YpuL-Q7NUwasjiUDkDEyB3GrzMXOinS-dvNVxQsJ0j95rxBnsaDTkJs4u2cTiA7qr-_URNcQr-ueYTu4eZMaIGAWUB1CLuNabTZzrhI_U3pfxwqOXR3Ny5qgXpH9SutAXHJ4p1Vs4rJNO7w4wpHjtgEd9Snu6aD4le9kNWC3D7eEK0xHigaVtZxrhNmyi9CJf24LBO7PykEOJ_hn62i4R_ouTnJO1cXg1W7kzC5L52CfWDB93GF9ZZvKaCZzphjVkgYQxxzQLBkMO2L3_k1FcUIPMfhAXuiZ3_Z-KPE0FpmGGJ8CuWNW3ft6GBezrjM1W935wtXPYN-IU6bq_W5JikV0hp6qIcjOKNWyXr3d52ok66QfgdtGR1VINmwpkOa-WT4k1-R1TwOwpI-X-wnDp0XjSCemX_l-3I6E72d_JAX5KbxKUHcpvw4KTNAwYoJ7AxoWg4WzyvRGmqTX6EJPA; ipv6=hit=1591729999163&t=4; _HPVN=CS=eyJQbiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiUCJ9LCJTYyI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiSCJ9LCJReiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiVCJ9LCJBcCI6dHJ1ZSwiTXV0ZSI6dHJ1ZSwiTGFkIjoiMjAyMC0wNi0wOVQwMDowMDowMFoiLCJJb3RkIjowLCJEZnQiOm51bGwsIk12cyI6MCwiRmx0IjowLCJJbXAiOjV9; SRCHHPGUSR=CW=1345&CH=888&DPR=1&UTC=240&WTS=63727307130&HV=1591726404"
+					},
+					{
+						"key": "bypasstbbsplash",
+						"value": "true"
+					}
+				],
+				"url": {
+					"raw": "https://www.bing.com/search?q={{keyword}}&form=QBLH&sp=-1&pq={{keyword}}&sc=6-5&qs=n&sk=&cvid=6653682C85044751AE0C03F6057B033C",
+					"protocol": "https",
+					"host": [
+						"www",
+						"bing",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{keyword}}"
+						},
+						{
+							"key": "form",
+							"value": "QBLH"
+						},
+						{
+							"key": "sp",
+							"value": "-1"
+						},
+						{
+							"key": "pq",
+							"value": "{{keyword}}"
+						},
+						{
+							"key": "sc",
+							"value": "6-5"
+						},
+						{
+							"key": "qs",
+							"value": "n"
+						},
+						{
+							"key": "sk",
+							"value": ""
+						},
+						{
+							"key": "cvid",
+							"value": "6653682C85044751AE0C03F6057B033C"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
