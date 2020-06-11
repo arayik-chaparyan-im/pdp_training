@@ -1,0 +1,56 @@
+{
+	"id": "e5198f75-fe6f-4b80-9496-d3b2c9a48543",
+	"name": "Yahoo",
+	"timestamp": "2020-06-11T19:12:27.648Z",
+	"collection_id": "7b56bf48-83a0-4bc3-888e-dbbff66490b6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e02b0757-cf25-4381-bb62-43770d649310",
+			"name": "{{keywords}}",
+			"time": 863,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check Status Code Is 200": true
+			},
+			"testPassFailCounts": {
+				"Check Status Code Is 200": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				860,
+				998,
+				894,
+				863
+			],
+			"allTests": [
+				{},
+				{},
+				{
+					"Check Status Code Is 200": true
+				},
+				{
+					"Check Status Code Is 200": true
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 3615,
+	"collection": {
+		"requests": [
+			{
+				"id": "e02b0757-cf25-4381-bb62-43770d649310",
+				"method": "GET"
+			}
+		]
+	}
+}
