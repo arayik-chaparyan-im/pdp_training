@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "b03abc5a-8e6d-4828-ae1f-e8dcce4736cf",
+		"name": "PDP Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce1b9eed-c80c-48c7-815c-c9459e5d532e",
+						"exec": [
+							"pm.test(\"The test is passed\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "AR6IHIZuWJa6860CsOb2K5z7jJr1635v9KVHiQkT"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://www.imdb.com/find?q={{keyword}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{keyword}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
