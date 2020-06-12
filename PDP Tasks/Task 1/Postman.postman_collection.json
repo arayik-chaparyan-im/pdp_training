@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "61f8a311-9f74-4e3c-b330-0986cc198605",
+		"name": "Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.google.com/search?safe=active&sxsrf=ALeKk039Y6Jd34JreDAFnLOTpSjo_vCJlA%3A1591969180821&ei=nIXjXufHMcjgUfSuqZgE&q={{keyword}}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f4312819-3fa3-428d-b187-df5b2e0ae0b9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.google.com/search?safe=active&sxsrf=ALeKk039Y6Jd34JreDAFnLOTpSjo_vCJlA%3A1591969180821&ei=nIXjXufHMcjgUfSuqZgE&q={{keyword}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "safe",
+							"value": "active"
+						},
+						{
+							"key": "sxsrf",
+							"value": "ALeKk039Y6Jd34JreDAFnLOTpSjo_vCJlA%3A1591969180821"
+						},
+						{
+							"key": "ei",
+							"value": "nIXjXufHMcjgUfSuqZgE"
+						},
+						{
+							"key": "q",
+							"value": "{{keyword}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
