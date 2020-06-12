@@ -1,0 +1,2 @@
+For changing all "text" keywords with "DONE" keyword used the following command:
+sed s/test/DONE/gI test.txt > test.result.txt 

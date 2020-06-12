@@ -1,0 +1,2 @@
+For showing the count of all Google Chrome processes used the following command:
+pgrep -c chrome
