@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "1b2def88-c9e8-4548-8908-fed2083fdcfc",
+		"name": "PDP/Task1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "country",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8b9bd663-6415-446d-9c07-60963a1dc6d0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.bing.com"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.bing.com/?toWww=1&redig=BF613FB033304FB4B001989F4588B0A3"
+					},
+					{
+						"key": "accept-language",
+						"value": "en,ru;q=0.9,en-US;q=0.8,es-ES;q=0.7,es;q=0.6,fr-FR;q=0.5,fr;q=0.4"
+					},
+					{
+						"key": "cookie",
+						"value": "SRCHD=AF=B00032; SRCHUID=V=2&GUID=562EBB8300164DA185D38A64BC493C07&dmnchg=1; RwBf=s=70&o=18; MUID=38861BC5860A69241CA1150687816840; MUIDB=38861BC5860A69241CA1150687816840; SRCHUSR=DOB=20191003&T=1591631328000; BFBUSR=BAWAS=1; OID=AhBPMDwY4hoNOwE3D96JuLNYWSzW2eqQmuUlvap5OXrO2dDqy4bBVGoKKQXBPY5HYyd953W31d054C8f0ZaMVUhR; OIDI=AhAxcFtLDCLzG4rWSA54p1zkcfzkOP-c0jCL1k7UP1Hunw; BFB=AhBPJHSETCyLIwWHPxvHD-Txufu4maUIQE8WbV4HYwuo_hAkH8BPi4He64hlfRNI3zU4XKqu7qW6i9rDIjYZZ2SzdYYAP4xjTn3MDXfIz1KnUbl-gU8SqSHjFjKcD4gpnSE; SS=SID=3A0AA39BF9926469312BAD7DF81965EE; HPVN=CS=eyJQbiI6eyJDbiI6MiwiU3QiOjAsIlFzIjowLCJQcm9kIjoiUCJ9LCJTYyI6eyJDbiI6MiwiU3QiOjAsIlFzIjowLCJQcm9kIjoiSCJ9LCJReiI6eyJDbiI6MiwiU3QiOjAsIlFzIjowLCJQcm9kIjoiVCJ9LCJBcCI6dHJ1ZSwiTXV0ZSI6dHJ1ZSwiTGFkIjoiMjAyMC0wNi0xMVQwMDowMDowMFoiLCJJb3RkIjowLCJEZnQiOm51bGwsIk12cyI6MCwiRmx0IjowLCJJbXAiOjR9; ipv6=hit=1591905223603&t=4; EDGE_S=mkt=hy-am&SID=3A0AA39BF9926469312BAD7DF81965EE; SRCHHPGUSR=CW=992&CH=920&DPR=1&UTC=240&WTS=63727228123&HV=1591902131"
+					}
+				],
+				"url": {
+					"raw": "https://www.bing.com/search?q={{country}}&form=QBLH&sp=-1&pq={{country}}&sc=6-5&qs=n&sk=&cvid=9047D844878949E0B4AD4FB4583014A9",
+					"protocol": "https",
+					"host": [
+						"www",
+						"bing",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{country}}"
+						},
+						{
+							"key": "form",
+							"value": "QBLH"
+						},
+						{
+							"key": "sp",
+							"value": "-1"
+						},
+						{
+							"key": "pq",
+							"value": "{{country}}"
+						},
+						{
+							"key": "sc",
+							"value": "6-5"
+						},
+						{
+							"key": "qs",
+							"value": "n"
+						},
+						{
+							"key": "sk",
+							"value": ""
+						},
+						{
+							"key": "cvid",
+							"value": "9047D844878949E0B4AD4FB4583014A9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
