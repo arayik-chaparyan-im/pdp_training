@@ -25,7 +25,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://www.bing.com/search?q=goris&form=QBLH&sp=-1&pq=goris&sc=6-5&qs=n&sk=&cvid=9047D844878949E0B4AD4FB4583014A9",
+					"raw": "https://www.bing.com/search?q={{country}}",
 					"protocol": "https",
 					"host": [
 						"www",
@@ -38,35 +38,7 @@
 					"query": [
 						{
 							"key": "q",
-							"value": "goris"
-						},
-						{
-							"key": "form",
-							"value": "QBLH"
-						},
-						{
-							"key": "sp",
-							"value": "-1"
-						},
-						{
-							"key": "pq",
-							"value": "goris"
-						},
-						{
-							"key": "sc",
-							"value": "6-5"
-						},
-						{
-							"key": "qs",
-							"value": "n"
-						},
-						{
-							"key": "sk",
-							"value": ""
-						},
-						{
-							"key": "cvid",
-							"value": "9047D844878949E0B4AD4FB4583014A9"
+							"value": "{{country}}"
 						}
 					]
 				}
