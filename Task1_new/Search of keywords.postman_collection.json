@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "2bbb30aa-0310-48d6-86c0-fc9e5d6d60ac",
+		"name": "Search of keywords",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "searchkey",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ec351549-8c9d-4225-994d-4519301d7d69",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.imdb.com/find?q={{searchkey}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{searchkey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
