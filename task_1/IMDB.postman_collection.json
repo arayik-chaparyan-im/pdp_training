@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "d5393655-88c6-487d-8364-9e46cc5714e7",
+		"name": "IMDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "88af4fb8-4696-498c-90df-533b86d96138",
+						"exec": [
+							"pm.test(\"Check Status Code Is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.imdb.com/find?q={{keywords}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{keywords}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
