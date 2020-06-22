@@ -1,0 +1,5 @@
+Steps to resolving Task1:
+1. Import bing.postman_collection.json to your postman
+2. Click "Run" button on the collection
+3. Select the search.csv file
+4. Click "Run bing" button

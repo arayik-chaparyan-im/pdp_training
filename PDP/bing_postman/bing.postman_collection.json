@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "4d740989-a5b0-4afc-9bcd-cbcb7544b3da",
+		"name": "bing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.bing.com/search?q=kapan",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "46034d17-c6f6-45e4-904b-1ec76fce374c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "razm8jx2dg1ifnyhn8zh"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"guid\": \"hit-the-mat-1-xbp21dp\", \"percent_complete\": 100, \"cutoff_mins\": 10}"
+				},
+				"url": {
+					"raw": "https://www.bing.com/search?q={{search}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"bing",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{search}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
