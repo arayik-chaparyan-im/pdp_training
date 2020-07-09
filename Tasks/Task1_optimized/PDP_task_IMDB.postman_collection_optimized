@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "da16cf13-56c3-429f-aec8-1d2b13d91394",
+		"name": "PDP_task_IMDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search_key optimized",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "52394c2f-a3a9-4e57-9976-21822e446562",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.imdb.com",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://www.imdb.com/find?s=kw&q={{search_key}}&ref_=nv_sr_sm",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "kw"
+						},
+						{
+							"key": "q",
+							"value": "{{search_key}}"
+						},
+						{
+							"key": "ref_",
+							"value": "nv_sr_sm"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
