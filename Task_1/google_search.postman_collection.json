@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "63e9f9d7-9972-4d2a-8c07-b1ac83f2250f",
+		"name": "google_search",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.google.com/search?q={{keywords}}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "25ad88e3-1075-4d11-a7a3-12db3c5a9587",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.google.com/search?q={{keywords}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{keywords}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
