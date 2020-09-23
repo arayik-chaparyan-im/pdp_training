@@ -1,17 +1,17 @@
 {
 	"info": {
-		"_postman_id": "da16cf13-56c3-429f-aec8-1d2b13d91394",
-		"name": "PDP_task_IMDB",
+		"_postman_id": "75ca1461-4e8c-4c94-916a-95ce6c67c636",
+		"name": "IMDB",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "search_key optimized",
+			"name": "search_key",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "52394c2f-a3a9-4e57-9976-21822e446562",
+						"id": "4df65fa9-a3d9-4097-86a6-3a838b51b89b",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
@@ -23,24 +23,17 @@
 			],
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
-					"host": true,
-					"user-agent": true,
-					"accept": true,
+					"connection": true,
 					"accept-encoding": true,
-					"connection": true
+					"accept": true,
+					"user-agent": true
 				}
 			},
 			"request": {
 				"method": "GET",
-				"header": [
-					{
-						"key": "authority",
-						"value": "www.imdb.com",
-						"disabled": true
-					}
-				],
+				"header": [],
 				"url": {
-					"raw": "https://www.imdb.com/find?s=kw&q={{search_key}}&ref_=nv_sr_sm",
+					"raw": "https://www.imdb.com/find?q={{search_key}}",
 					"protocol": "https",
 					"host": [
 						"www",
@@ -52,16 +45,8 @@
 					],
 					"query": [
 						{
-							"key": "s",
-							"value": "kw"
-						},
-						{
 							"key": "q",
 							"value": "{{search_key}}"
-						},
-						{
-							"key": "ref_",
-							"value": "nv_sr_sm"
 						}
 					]
 				}
