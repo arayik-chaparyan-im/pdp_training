@@ -1,0 +1,2 @@
+# Write bash command(s) to read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file.
+sed s/test/DONE/gI test.txt > test.result.txt
