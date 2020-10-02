@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "3c223099-213e-4058-bf12-0adc1369b150",
+		"name": "PDP Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "71e1479f-c386-4e4b-a3ae-07d81a3bc4db",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.google.com"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.google.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9,hy;q=0.8"
+					},
+					{
+						"key": "cookie",
+						"value": "CGIC=Inx0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS93ZWJwLGltYWdlL2FwbmcsKi8qO3E9MC44LGFwcGxpY2F0aW9uL3NpZ25lZC1leGNoYW5nZTt2PWIzO3E9MC45; NID=204=dbOImHm99YC_mCRf9-ftOUhXeKblVwxHWF2teDRqNNM4l39iSu386YsLv-1xBNHEpeOWm9hELuPLmETE0IdnvK61wqdlJ7cWfwNryKnMDfyPUL_WiryvWUZ4mxj-wlTuj5MUltKZpXN7O54oowDCMLfKp5ywlVME2LeG7vCD4f8; 1P_JAR=2020-07-11-19; DV=gyBsMxv0sTUgoPugrFVU4Madg4f1MxcZWqaFSPtAjwEAAAA"
+					}
+				],
+				"url": {
+					"raw": "https://www.google.com/complete/search?q={{variable}}&client=desktop-gws-wiz-on-focus-serp&gs_ri=gws-wiz&hl=en-AM&pq={{variable}}&psi=jBIKX_j-JfDjrgTO14KYDg.1594495632089",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						"complete",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{variable}}"
+						},
+						{
+							"key": "client",
+							"value": "desktop-gws-wiz-on-focus-serp"
+						},
+						{
+							"key": "gs_ri",
+							"value": "gws-wiz"
+						},
+						{
+							"key": "hl",
+							"value": "en-AM"
+						},
+						{
+							"key": "pq",
+							"value": "{{variable}}"
+						},
+						{
+							"key": "psi",
+							"value": "jBIKX_j-JfDjrgTO14KYDg.1594495632089"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
