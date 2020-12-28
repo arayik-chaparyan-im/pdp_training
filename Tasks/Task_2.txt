@@ -1,0 +1,11 @@
+Task 2
+Write bash command(s) to show count of all Google Chrome processes
+
+Command(s):
+1. pgrep -c Chrome
+2. ps -aux | pgrep - c 
+    ps - process status
+a:- This option prints the running processes from all users.
+u:- This option shows user or owner column in output.
+x:- This option prints the processes those have not been executed from the terminal.
+Collectively the options "aux" print all the running process in system regardless from where they have been executed.
