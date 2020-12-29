@@ -1,0 +1,20 @@
+- forked https://github.com/arayik-chaparyan-im/pdp_training.git into your git account
+- cloned the forked https://github.com/<you_github_account>/pdp_training.git to my local machine
+- created a new branch from master branch to "my_name" branch
+- switched to new branch
+- added solutions of previous tasks in separate files
+- commited files
+- created remote branch with my local branch name
+- pushed my commits to remote branch
+
+Commands:
+git clone /path/to/repository - Create a working copy of a local repository
+git branch Zhenya - creating a new branch
+git checkout Zhenya- switch to the new branch
+git add <file name> - add files to staging 
+git status - list the files you've changed and those you still need to add or commit -  Commit changes to head (but not yet to the remote repository)
+git push origin master - Send changes to the master branch of your remote repository
+git pull - Fetch and merge changes on the remote server to your working directory
+
+The created branch/repasitory of mine:
+https://github.com/ZhenyaTatintsyan/pdp_training.git
