@@ -1,0 +1,11 @@
+Task 3
+Write bash command(s) to read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file.
+ - "test.txt" file you can find from "GIT" topic.
+Command(s):
+1. sed 's/test/DONE/gI' test.txt>test.result.txt
+sed ->  stream editor
+s -> subtitute
+gI -> global Insensitive
+
+2. sed -i s/test/DONE/gI test.txt
+i -> insert

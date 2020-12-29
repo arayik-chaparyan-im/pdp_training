@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "2e05e1eb-be0d-474e-84c8-d559a358e3b4",
+		"name": "Search",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test_search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.bing.com"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.bing.com/?toWww=1&redig=6D80F64B43D449978C44BFA2D502E37B"
+					},
+					{
+						"key": "accept-language",
+						"value": "en,ru;q=0.9,hy;q=0.8,en-US;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "MUID=2D58765D17596FDD262C788116326E37; SRCHD=AF=NOFORM; SRCHUID=V=2&GUID=1BF3EA85EF4145999BC4F1B761607508&dmnchg=1; MUIDB=2D58765D17596FDD262C788116326E37; _SS=SID=2DEB18256C4F64023F2916D46DC465D4; _EDGE_S=mkt=hy-am&SID=2DEB18256C4F64023F2916D46DC465D4; ipv6=hit=1592847892911&t=4; SRCHUSR=DOB=20200614&T=1592844378000; _HPVN=CS=eyJQbiI6eyJDbiI6MywiU3QiOjAsIlFzIjowLCJQcm9kIjoiUCJ9LCJTYyI6eyJDbiI6MywiU3QiOjAsIlFzIjowLCJQcm9kIjoiSCJ9LCJReiI6eyJDbiI6MywiU3QiOjAsIlFzIjowLCJQcm9kIjoiVCJ9LCJBcCI6dHJ1ZSwiTXV0ZSI6dHJ1ZSwiTGFkIjoiMjAyMC0wNi0yMlQwMDowMDowMFoiLCJJb3RkIjowLCJEZnQiOm51bGwsIk12cyI6MCwiRmx0IjowLCJJbXAiOjV9; SRCHHPGUSR=WTS=63728441090&HV=1592844842&CW=1077&CH=920&DPR=1&UTC=240&NEWWND=0&NRSLT=-1&SRCHLANG=&AS=1&ADLT=STRICT&NNT=1&HAP=0&DM=0; _UR=OMD=13237318450"
+					}
+				],
+				"url": {
+					"raw": "https://www.bing.com/search?q={{value}}&form=QBLH&pq={{value}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"bing",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{value}}"
+						},
+						{
+							"key": "form",
+							"value": "QBLH"
+						},
+						{
+							"key": "pq",
+							"value": "{{value}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
