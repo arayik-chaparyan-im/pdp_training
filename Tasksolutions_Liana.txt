@@ -1,0 +1,29 @@
+Task_1
+Create collection to search list of keywords from file in bing.com website and check result status code to be equal to 200.
+ - list of keywords: yerevan, goris, vanadzor, kapan
+
+Postman call: 
+https://www.bing.com/search?q={{City}}
+
+Pre0request script:
+//get the 'value' field from the data file for this request run
+pm.iterationData.get("City")
+
+Created json file with city names
+
+Test to check the status code:
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+
+Task_2
+Write bash command(s) to show count of all Google Chrome processes.
+
+ps -C chrome | wc -L
+
+Task_3
+Write bash command(s) to read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file.
+ - "test.txt" file you can find from "GIT" topic.
+
+sed  's/test/DONE/g'  < test.txt  > test.result.txt
