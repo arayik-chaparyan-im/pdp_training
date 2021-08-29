@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "6824544d-b653-42da-a399-09a905db9575",
+		"name": "Search",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.imdb.com/find?q={{category}}&ref_=nv_sr_sm",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.imdb.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.imdb.com/find?q=dsfsfd&ref_=nv_sr_sm"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "uu=eyJpZCI6InV1ODg5ZGMzNzEyYjRhNDE2MzhjNzQiLCJwcmVmZXJlbmNlcyI6eyJmaW5kX2luY2x1ZGVfYWR1bHQiOmZhbHNlfX0=; session-id=143-6108566-2534557; adblk=adblk_no; ubid-main=132-6866321-3579837; session-id-time=2082787201l; session-token=TK7onVjrTCSzKRngzsCf3YUnY4OwRcteFdqPpodchj0v63W2tRbMQagu5/PJwlonbbGSPhDo+eiyJ0lLEJ/Q1WB4XCJvBudHxGyRniG0tJ6tK/BJ5HPG2pGXUvItDeQfFmjGVyJ18swr7Uq8M5i9JPi715wu0btRsMMRVV/JKM1FAj/OpprYTOSUy6xtDi/J; as=%7B%22n%22%3A%7B%22t%22%3A%5B0%2C0%5D%2C%22tr%22%3A%5B0%2C0%5D%2C%22in%22%3A%5B0%2C0%5D%2C%22ib%22%3A%5B0%2C0%5D%7D%7D; csm-hit=tb:570Z49QP99H0FBW7YP1Y+s-J7D6W324P3046MZ1JRGR|1625223397287&t:1625223397287&adb:adblk_no"
+					}
+				],
+				"url": {
+					"raw": "https://www.imdb.com/find?q={{category}}&ref_=nv_sr_sm",
+					"protocol": "https",
+					"host": [
+						"www",
+						"imdb",
+						"com"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{category}}"
+						},
+						{
+							"key": "ref_",
+							"value": "nv_sr_sm"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
