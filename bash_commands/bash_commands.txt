@@ -1,0 +1,2 @@
+to replace words in text file i use command sed (sed 'sed/test/DONE/g' test.txt >test.result.txt)
+to view Google Chrome processes i use "ps aux" command (ps aux | grep chrome)

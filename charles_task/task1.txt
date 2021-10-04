@@ -1,0 +1,2 @@
+to make login fail I used this call (dotcom-api-proxy.discovery-qa1.axsdevops.io/proxy/v2/users/1/axsid/*/authenticate) 
+and used Block list option (select Return 403 response in Blocking Action dropdown)

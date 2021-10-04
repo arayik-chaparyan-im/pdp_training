@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "c38c9263-a270-4c8a-b66b-2f7556851fb6",
+		"name": "PDP Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search city",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{google}}={{city}}",
+					"host": [
+						"{{google}}={{city}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "bing",
+			"value": "https://www.bing.com/search?q"
+		},
+		{
+			"key": "google",
+			"value": "https://www.google.com/search?q"
+		},
+		{
+			"key": "yahoo",
+			"value": "https://search.yahoo.com/search?p"
+		}
+	]
+}

@@ -1,0 +1,1 @@
+to make account creation fail due to incomplete request I used Breakpoint option and this call(dotcom-api-proxy.discovery-qa1.axsdevops.io/proxy/v2/users/1/axsidaccess_token=*) .In the request's JSON file  I delete the value of "email:"

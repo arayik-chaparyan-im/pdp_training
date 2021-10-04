@@ -1,0 +1,56 @@
+{
+	"id": "890b02ae-094f-457a-89d1-a1ba901ca14c",
+	"name": "PDP Collection",
+	"timestamp": "2021-10-01T15:04:09.849Z",
+	"collection_id": "17749752-c38c9263-a270-4c8a-b66b-2f7556851fb6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 3,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "65267e84-684b-4e3d-ae88-51f6ebef9fa1",
+			"name": "search city",
+			"time": 124,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				124,
+				119,
+				124
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 3,
+	"totalTime": 367,
+	"collection": {
+		"requests": [
+			{
+				"id": "65267e84-684b-4e3d-ae88-51f6ebef9fa1",
+				"method": "GET"
+			}
+		]
+	}
+
