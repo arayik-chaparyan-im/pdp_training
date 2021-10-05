@@ -1,2 +1,4 @@
 to make login fail I used this call (dotcom-api-proxy.discovery-qa1.axsdevops.io/proxy/v2/users/1/axsid/*/authenticate) 
 and used Block list option (select Return 403 response in Blocking Action dropdown)
+
+Here you can see the attachment     https://drive.google.com/file/d/1d-yQjHaV_lYZmCrmzFyVQ4of6zEBm6wt/view?usp=sharing

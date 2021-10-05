@@ -1,2 +1,6 @@
 to replace words in text file i use command sed (sed 'sed/test/DONE/g' test.txt >test.result.txt)
+Here you can see the attachment   https://drive.google.com/file/d/1H7HavCgGYu9aOM_BmP6dhNiZV_ji3Zzr/view?usp=sharing
+
+
 to view Google Chrome processes i use "ps aux" command (ps aux | grep chrome)
+Here you can see the attachment    https://drive.google.com/file/d/1JvuOF9eZ53OYie4nDgra0wXdE5VLvoiT/view?usp=sharing
