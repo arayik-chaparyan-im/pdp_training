@@ -1,0 +1,45 @@
+{
+	"id": "89f10d27-4751-4b9d-93b6-fee739176273",
+	"name": "PDP COLLECTION",
+	"timestamp": "2021-10-03T05:53:14.000Z",
+	"collection_id": "13238762-0dab8756-b0dd-40d7-a2a6-ead0a472491c",
+	"folder_id": 0,
+	"environment_id": "13238762-00829b52-63e2-4df8-b256-88f30e1720cd",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "52435df3-7163-4b53-96de-5f40e3310359",
+			"name": "{{google}}={{city}}",
+			"time": 591,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1009,
+				815,
+				955,
+				591
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 3370,
+	"collection": {
+		"requests": [
+			{
+				"id": "52435df3-7163-4b53-96de-5f40e3310359",
+				"method": "GET"
+			}
+		]
+	}
+}
