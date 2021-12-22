@@ -1,0 +1,23 @@
+{
+	"info": {
+		"_postman_id": "dbd4ed37-51f4-4934-afe5-659df56d714b",
+		"name": "PDP Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PDP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{google}}={{city}}",
+					"host": [
+						"{{google}}={{city}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
