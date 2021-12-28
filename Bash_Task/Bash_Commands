@@ -1,0 +1,5 @@
+To see chrome processes use the following command:
+ps aux | grep chrome
+
+To change words in the file use the following command:
+sed 's/test/DONE/g' test.txt > test.result.txt 
