@@ -1,0 +1,12 @@
+ Import Yahoo.postman-collection.json file as collection and  Yahoo-new.postman_environment.json as colection
+Click on the "Runner" menu item
+Select collection, and request
+Select Environment
+Click on the "Select File" button
+Choose cities.csv file
+Click on the "Run" button
+" pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+}); " 
+this code is checking, that request's status is 200
+
