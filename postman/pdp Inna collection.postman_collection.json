@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "ecd3cc77-03cb-494d-a211-65cd072d2e1e",
+		"name": "pdp Inna collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search cities",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Bing}}{{city}}",
+					"host": [
+						"{{Bing}}{{city}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Yahoo",
+			"value": "https://search.yahoo.com/search?p="
+		},
+		{
+			"key": "Google",
+			"value": "https://www.google.com/search?q="
+		},
+		{
+			"key": "Bing",
+			"value": "https://www.bing.com/search?q="
+		}
+	]
+}
