@@ -1,0 +1,2 @@
+The preceding bash command(s) displays the count of all Google Chrome processes I'm running.
+- ps aux | grep chrome | wc -l

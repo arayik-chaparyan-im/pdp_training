@@ -1,0 +1,43 @@
+me": "PDP task",
+	"timestamp": "2021-12-29T10:42:19.381Z",
+	"collection_id": "18401719-eec0661a-0554-4b45-8534-599c314281b6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "555494ab-fbe7-47a3-b952-14c337300a5b",
+			"name": "New Request",
+			"time": 525,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				352,
+				476,
+				400,
+				525
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 1753,
+	"collection": {
+		"requests": [
+			{
+				"id": "555494ab-fbe7-47a3-b952-14c337300a5b",
+				"method": "GET"
+			}
+		]
+	}
+}
