@@ -6,14 +6,27 @@
 	},
 	"item": [
 		{
-			"name": "PDP",
+			"name": "search city",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{google}}={{city}}",
+					"raw": "{{engine}}={{city}}",
 					"host": [
-						"{{google}}={{city}}"
+						"{{engine}}={{city}}"
 					]
 				}
 			},
