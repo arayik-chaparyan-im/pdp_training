@@ -1,0 +1,60 @@
+{
+	"id": "3ca3ca66-0276-4900-8211-5946183ebab4",
+	"name": "PDP_Katerina_task",
+	"timestamp": "2021-10-10T18:13:12.693Z",
+	"collection_id": "f4f21428-5a63-47a4-998d-9ce157fb8f70",
+	"folder_id": 0,
+	"environment_id": "86b60470-6e83-448f-9013-80300fcdeadd",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0a099b20-9fe2-40aa-bbe1-adeac033d042",
+			"name": "PDP_Request",
+			"time": 572,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				480,
+				499,
+				543,
+				572
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 2094,
+	"collection": {
+		"requests": [
+			{
+				"id": "0a099b20-9fe2-40aa-bbe1-adeac033d042",
+				"method": "GET"
+			}
+		]
+	}
+}

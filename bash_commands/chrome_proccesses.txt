@@ -1,0 +1,3 @@
+to see chrome proccesses i have used the following commands:
+1. ps aux | grep chrome
+2. pgrep -c chrome

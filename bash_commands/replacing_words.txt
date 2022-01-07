@@ -1,0 +1,2 @@
+to replace words in the file i have used the following command:
+1. sed 's/test/DONE/g' test.txt >test_result.txt

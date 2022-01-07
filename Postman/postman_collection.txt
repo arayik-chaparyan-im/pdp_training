@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "f4f21428-5a63-47a4-998d-9ce157fb8f70",
+		"name": "PDP_Katerina_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PDP_Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{bing}}={{city}}",
+					"host": [
+						"{{bing}}={{city}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"  pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "google",
+			"value": "https://www.google.com/search?q"
+		},
+		{
+			"key": "yahoo",
+			"value": "https://search.yahoo.com/search?p"
+		},
+		{
+			"key": "bing",
+			"value": "https://www.bing.com/search?q"
+		}
+	]
+}
