@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "fb3b5e0e-082e-4d08-92db-50cdf16c2fcc",
-		"name": "Search_01",
+		"name": "PDP_task_collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -24,9 +24,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{google}}{{city}}",
+					"raw": "{{search_engine}}={{city}}",
 					"host": [
-						"{{google}}{{city}}"
+						"{{search_engine}}={{city}}"
 					]
 				}
 			},
@@ -51,20 +51,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "google",
-			"value": "https://www.google.ru/search?q="
-		},
-		{
-			"key": "yahoo",
-			"value": "https://search.yahoo.com/?p="
-		},
-		{
-			"key": "bing",
-			"value": "https://www.bing.com/search?q="
 		}
 	]
 }
