@@ -1,0 +1,68 @@
+{
+	"id": "71c86e03-8cbc-419c-a973-444f816c3cac",
+	"name": "Yahoo",
+	"timestamp": "2022-01-12T07:49:27.208Z",
+	"collection_id": "88f95ecc-fed4-47d1-b61a-a8c7a79a0753",
+	"folder_id": 0,
+	"environment_id": "e9aa497d-bb7d-415b-b34f-25066df3a2a3",
+	"totalPass": 6,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0f2ad327-d26e-4b4b-a06b-02e4359af2be",
+			"name": "testing",
+			"time": 867,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 6,
+					"fail": 0
+				}
+			},
+			"times": [
+				1790,
+				1118,
+				851,
+				905,
+				875,
+				867
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 6,
+	"totalTime": 6406,
+	"collection": {
+		"requests": [
+			{
+				"id": "0f2ad327-d26e-4b4b-a06b-02e4359af2be",
+				"method": "GET"
+			}
+		]
+	}
+}
