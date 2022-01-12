@@ -1,4 +1,4 @@
- Import Yahoo.postman-collection.json file as collection and  Yahoo-new.postman_environment.json as environment
+ Import Yahoo.postman-collection.json file as collection and  Yahoo.postman_environment.json as environment
 
 Click on the "Runner" menu item
 Select collection, and request
