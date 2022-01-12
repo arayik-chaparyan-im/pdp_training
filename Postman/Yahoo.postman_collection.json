@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c3db6eea-c382-434a-b25c-0b481da22445",
+		"_postman_id": "88f95ecc-fed4-47d1-b61a-a8c7a79a0753",
 		"name": "Yahoo",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -49,7 +49,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"{{username}}\"\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
