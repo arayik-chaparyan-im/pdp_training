@@ -1,0 +1,7 @@
+To count all google processes used the bellow command 
+ps aux | grep chrome | wc -l
+
+
+to read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file used the command below:
+sed 's/test/Done/g' test.txt > test.resuslt.txt
+

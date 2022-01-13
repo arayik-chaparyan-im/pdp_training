@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "fa19015c-f3ed-4c6b-a59e-b0589b1e3d8d",
+		"name": "Postman task2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "yahoo,google,bing",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"  pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}?{{query_key}}=Goris",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "{{query_key}}",
+							"value": "Goris"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
