@@ -1,0 +1,23 @@
+{
+	"info": {
+		"_postman_id": "03c92111-ddb2-4020-8d8d-7e40be9bc6e7",
+		"name": "PDP Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PDP 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{search}}={{city}}",
+					"host": [
+						"{{search}}={{city}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
