@@ -24,9 +24,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{Bing}}{{city}}",
+					"raw": "{{serchBy}}={{city}}",
 					"host": [
-						"{{Bing}}{{city}}"
+						"{{serchBy}}={{city}}"
 					]
 				}
 			},
@@ -51,20 +51,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "Yahoo",
-			"value": "https://search.yahoo.com/search?p="
-		},
-		{
-			"key": "Google",
-			"value": "https://www.google.com/search?q="
-		},
-		{
-			"key": "Bing",
-			"value": "https://www.bing.com/search?q="
 		}
 	]
 }
