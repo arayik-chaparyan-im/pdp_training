@@ -1,0 +1,9 @@
+Using Puzl make :
+a) Login to fail for a valid username and password
+b) Create Accounts to fail due to incomplete request data
+
+
+Credentials
+
+https://test.puzl.ai
+retailer@puzl.ai/PuzlPass!2

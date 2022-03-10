@@ -1,0 +1,23 @@
+{
+	"info": {
+		"_postman_id": "d10cb87c-9d69-4273-a863-0c16c27c16ac",
+		"name": "Engines",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{engine}}=Kapan",
+					"host": [
+						"{{engine}}=Kapan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
