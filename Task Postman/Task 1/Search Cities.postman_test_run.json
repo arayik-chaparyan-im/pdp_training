@@ -1,0 +1,60 @@
+{
+	"id": "0b5d26da-00fb-463f-a77a-de0add29b8c5",
+	"name": "Search Cities",
+	"timestamp": "2022-03-07T12:56:18.790Z",
+	"collection_id": "15585329-6dbb77d3-edf4-4c4d-92f2-7d8e3161394e",
+	"folder_id": 0,
+	"environment_id": "15585329-95a150fa-3d64-4ad6-a81e-1bbf35959573",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "18de1231-6863-4186-8b68-8c35fd0711d4",
+			"name": "New Request",
+			"time": 1141,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				1194,
+				1099,
+				1255,
+				1141
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 4689,
+	"collection": {
+		"requests": [
+			{
+				"id": "18de1231-6863-4186-8b68-8c35fd0711d4",
+				"method": "POST"
+			}
+		]
+	}
+}

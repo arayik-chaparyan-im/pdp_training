@@ -1,0 +1,22 @@
+1. Write bash command(s) to show count of all Google Chrome processes.
+
+ps aux | grep chrome | wc -l
+
+
+
+2.Write bash command(s) to read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file.
+
+ - "test.txt" file you can find from "GIT" topic.
+
+This is test file just for testing purposes and data for 2nd task you get to improve your PDP skills.
+Try to find best soulution for test task.
+Good luck with this test.
+Test regards
+
+
+
+
+sed 's/test/DONE/g' test.txt > test.result.txt
+
+
+sed 's/old word/new word/g'   name of old file > name of new file
