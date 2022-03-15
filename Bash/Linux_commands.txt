@@ -1,0 +1,17 @@
+1. Write bash command(s) to show count of all Google Chrome processes.
+
+ps aux | grep chrome | wc -l
+
+
+
+2.Write bash command(s) to read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file.
+ 
+cat test.txt
+
+
+sed 's/test/DONE/g' test.txt > test.result.txt
+
+where,
+
+sed 's/old word/new word/g' name of old file > name of new file
+

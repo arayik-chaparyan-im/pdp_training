@@ -1,0 +1,23 @@
+{
+	"info": {
+		"_postman_id": "400b6932-19c6-4110-b505-89e79b32b426",
+		"name": "task2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "engine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{engine}}=goris",
+					"host": [
+						"{{engine}}=goris"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

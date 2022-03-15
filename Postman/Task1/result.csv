@@ -1,0 +1,60 @@
+{
+	"id": "9d898c0f-9208-4641-955a-a6231c66dae1",
+	"name": "test collection",
+	"timestamp": "2022-03-07T06:55:38.644Z",
+	"collection_id": "19746077-fc8469d5-2803-412c-9d56-182f110bf53c",
+	"folder_id": 0,
+	"environment_id": "19746077-d2b288bd-de00-4c83-b6c3-11eb5e856bed",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "99599912-9fcd-4440-9f3f-a4a21e244c40",
+			"name": "New Request",
+			"time": 502,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				483,
+				481,
+				495,
+				502
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 1961,
+	"collection": {
+		"requests": [
+			{
+				"id": "99599912-9fcd-4440-9f3f-a4a21e244c40",
+				"method": "POST"
+			}
+		]
+	}
+}
