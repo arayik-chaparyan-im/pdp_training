@@ -1,6 +1,7 @@
-
-stman_id": "eec0661a-0554-4b45-8534-599c314281b6",
-		"name": "PDP task",
+{
+	"info": {
+		"_postman_id": "5ed7d3c8-c6eb-4814-ae93-354b3f8a9ce8",
+		"name": "Search",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -10,47 +11,13 @@ stman_id": "eec0661a-0554-4b45-8534-599c314281b6",
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{bing}}{{city}}",
+					"raw": "{{search}}{{city}}",
 					"host": [
-						"{{bing}}{{city}}"
+						"{{search}}{{city}}"
 					]
 				}
 			},
 			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"key": "google ",
-			"value": "https://www.google.com/search?q="
-		},
-		{
-			"key": "bing",
-			"value": "https://www.bing.com/search?q="
-		},
-		{
-			"key": "yahoo",
-			"value": "https://search.yahoo.com/search?p="
 		}
 	]
 }

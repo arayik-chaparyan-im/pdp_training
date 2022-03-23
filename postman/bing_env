@@ -1,0 +1,14 @@
+{
+	"id": "8cc35ae6-60e5-43d1-a5da-643e62eff107",
+	"name": "Yahoo",
+	"values": [
+		{
+			"key": "search",
+			"value": "https://search.yahoo.com/search?p=",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-03-23T14:02:23.908Z",
+	"_postman_exported_using": "Postman/8.12.4"
+}
