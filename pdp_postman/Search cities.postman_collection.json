@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "0e763217-0a0c-4945-a3a9-d2f3c1d3f92f",
+		"name": "Search cities",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request cities",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://search.yahoo.com/search?p={{city}}",
+					"protocol": "https",
+					"host": [
+						"search",
+						"yahoo",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "{{city}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request cities 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}?{{query}}=goris",
+					"host": [
+						"{{base_url}}"
+					],
+					"query": [
+						{
+							"key": "{{query}}",
+							"value": "goris"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
