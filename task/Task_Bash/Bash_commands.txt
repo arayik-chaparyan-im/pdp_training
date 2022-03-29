@@ -1,0 +1,8 @@
+# To count all chrome processes please use this command bellow
+ps aux | grep chrome | wc -l
+
+# To read content of "test.txt" file, change all "test" keywords with "DONE" keyword and write in "test.result.txt" file please use this command below:
+sed 's/test/DONE/g' test.txt > test.result.txt
+
+# If you want to change all the "test" words no matter with general letters or no, please just add "I" letter in the command
+sed 's/test/DONE/gI' test.txt > test.result.txt

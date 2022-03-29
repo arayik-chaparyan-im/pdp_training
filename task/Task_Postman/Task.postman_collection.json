@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "8a5333e3-b7eb-40f5-b9e8-ee7b44d70988",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search by env",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status to be 200 ok\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}?{{query_key}}=postman lessons",
+					"host": [
+						"{{base_url}}"
+					],
+					"query": [
+						{
+							"key": "{{query_key}}",
+							"value": "postman lessons"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yahoo Search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status to be 200 ok\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://search.yahoo.com/search?p={{city}}",
+					"protocol": "https",
+					"host": [
+						"search",
+						"yahoo",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "{{city}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
