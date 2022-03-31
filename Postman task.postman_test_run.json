@@ -1,0 +1,60 @@
+{
+	"id": "f0bafc6e-505b-4558-95e1-5bc1860f170a",
+	"name": "Postman task",
+	"timestamp": "2022-03-31T07:52:21.582Z",
+	"collection_id": "19746077-b0969190-9b66-41ce-a817-0ee8ad03a7c0",
+	"folder_id": 0,
+	"environment_id": "19746077-22c75ec0-2c2f-4271-b3d2-5b1f2765fb3c",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "95281308-aeae-422e-afde-0bfe2a86a482",
+			"name": "pdp_tasks",
+			"time": 373,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				525,
+				400,
+				415,
+				373
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 1713,
+	"collection": {
+		"requests": [
+			{
+				"id": "95281308-aeae-422e-afde-0bfe2a86a482",
+				"method": "GET"
+			}
+		]
+	}
+}
