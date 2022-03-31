@@ -1,0 +1,60 @@
+{
+	"id": "e3e2e23d-774c-4548-914f-3d6be719ff23",
+	"name": "2 in 1",
+	"timestamp": "2022-03-31T09:03:06.704Z",
+	"collection_id": "15585329-42c96bb1-9e23-42aa-a36a-6874d14eaf66",
+	"folder_id": 0,
+	"environment_id": "15585329-d8f15e1b-fc53-4788-ba0b-28af1942e110",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8231a97d-9670-4a68-8010-0a11b6dbb534",
+			"name": "{{engine}}{{City}}",
+			"time": 374,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				458,
+				463,
+				411,
+				374
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 1706,
+	"collection": {
+		"requests": [
+			{
+				"id": "8231a97d-9670-4a68-8010-0a11b6dbb534",
+				"method": "GET"
+			}
+		]
+	}
+}
