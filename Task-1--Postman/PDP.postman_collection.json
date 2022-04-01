@@ -11,9 +11,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{bing}}={{city}}",
+					"raw": "{{search}}={{city}}",
 					"host": [
-						"{{bing}}={{city}}"
+						"{{search}}={{city}}"
 					]
 				}
 			},
