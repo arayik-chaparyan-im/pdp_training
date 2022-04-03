@@ -1,19 +1,19 @@
 {
 	"info": {
-		"_postman_id": "fa19015c-f3ed-4c6b-a59e-b0589b1e3d8d",
-		"name": "Postman task2",
+		"_postman_id": "0c287499-6b50-4343-9178-c02f0c9d3620",
+		"name": "postman task",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "yahoo,google,bing",
+			"name": "search by engines",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"  pm.response.to.have.status(200);",
+							"pm.test(\"Status to be 200 ok\", function() {",
+							"    pm.response.to.have.status(200);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -24,14 +24,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}?{{query_key}}=Goris",
+					"raw": "{{base_url}}?{{query_key}}={{city}}",
 					"host": [
-						"{{url}}"
+						"{{base_url}}"
 					],
 					"query": [
 						{
 							"key": "{{query_key}}",
-							"value": "Goris"
+							"value": "{{city}}"
 						}
 					]
 				}
