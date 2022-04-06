@@ -1,0 +1,23 @@
+{
+	"info": {
+		"_postman_id": "0dab8756-b0dd-40d7-a2a6-ead0a472491c",
+		"name": "PDP COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "City search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{search}}={{city}}",
+					"host": [
+						"{{search}}={{city}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

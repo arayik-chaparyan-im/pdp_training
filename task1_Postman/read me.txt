@@ -1,0 +1,1 @@
+You need to import collection in Postman then do run collection via CSV file
