@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="form.css">
+    <title>Form</title>
+</head>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form class ="form" id ="form" action="reg.php" method ="post">
+
+                <div class="form-control">
+                    <label for="firstname">First name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter firstname" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="lastname">Last name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter lastname" required>
+                </div>
+                <div class ="form-control">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="gender" name="gender" value ="m" required>Male
+                    <input type="radio" id="gender" name="gender" value="f" required>Female
+                </div>
+
+                <div class="form-control">
+                    <label for="date">Birthdate:</label>
+                    <input type="date" id="date" name="date" min ="1920-01-01" required>
+                </div>
+                    
+                <div class="form-control">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email:</label> 
+                    <input type="email" id = "email" name = "email" placeholder="Enter email" required> 
+                </div>
+                <div class="form-control">
+                    <label for="password">Password:</label> 
+                    <input type="password" id = "password" name = "password" minlength="6" maxlength="30" placeholder="Enter password" required> 
+                </div>
+                <div class="form-control">
+                    <button id ="submit" class="button" >Submit</button>
+                </div> 
+                
+        </form>
+    </div>
+</html>

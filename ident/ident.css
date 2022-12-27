@@ -1,0 +1,31 @@
+body{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+  }
+  em1 {
+    color:red ;
+  }
+  em2 {
+    color: blue;
+  }
+  em3 {
+  color: orange;
+  }
+  img {
+    width: 800px;
+    border: 10px;
+    float: left;
+    margin-right: 10px;
+  }
+  .greetings {
+    font-weight: bold;
+    font-size: 40px;
+    
+  }
+  .instructions {
+    font-size: x-large;
+  }
+  .login {
+    text-align: left;
+  }
+  
