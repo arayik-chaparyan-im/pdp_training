@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="usersTable.css">
+    <title>Users list</title>
+</head>
+
+<body>
+    <h2>Registered users</h2>
+    <table>
+        <thead id="tableHeader">
+            <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Gender</th>
+                <th>Birthdate</th>
+                <th>Username</th>
+                <th>Email</th>                
+            </tr>
+        </thead>
+    </table>
+    
+    <script>
+        fetch('api.php').then(function(response) {
+            return response.json();
+        }).then(function (users) {
+            
+
+            for (let user of users) {
+                console.log(user)
+                let output = `
+                        <td>${user.id}</td>
+                        <td>${user.firstname}</td>
+                        <td>${user.lastname}</td>
+                        <td>${user.gender}</td>
+                        <td>${user.birthdate}</td>
+                        <td>${user.username}</td>
+                        <td>${user.email}</td>`;
+                        let element = document.createElement("tr")
+                        element.innerHTML = output
+                        const tableHeader = document.getElementById("tableHeader")
+                        tableHeader.appendChild(element)
+            }
+
+            
+        }).catch(function (error) {
+            console.error('Something went wrong');
+            console.error(error);
+        });
+    </script>
+    
+   </body>
+</html>    

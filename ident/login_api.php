@@ -22,7 +22,7 @@ if ($row['username'] && password_verify($password, $row['password'])){
         $_SESSION['password'] = $row['password'];
 
         if(isset($_SESSION['id'])){
-            include('/opt/lampp/htdocs/ident/response_api.php');
+            include('/opt/lampp/htdocs/ident/users.html');
         }else{
                 echo "<script>alert('Expired session')</script>";
                 echo "<script>location.replace('ident.html')</script>";
