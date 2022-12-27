@@ -15,4 +15,4 @@ For learning purposes
  * illustrate FE/BE/DB connection
  * allow to sign up if not having an existing account
  * allow to log in if having an existing account
- * call an API to return all the registered  users and display them in a separate tab within table 
+ * call an API to fetch all the registered  users and display them in a separate tab within a table 
